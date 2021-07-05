@@ -10,11 +10,15 @@ const models = require('./models/models')//The tables
 
 const router = require('./routes/index')
 
+const errorHandler = require('./middleware/ErrorHandlingMiddleware')
+
 
 
 app.use(cors()) //The working with the requests
 app.use(express.json()) //The working with .json
+
 app.use('/api', router)
+app.use(errorHandler) //Error handling
 
 const start = async () => {
     try {
@@ -26,4 +30,5 @@ const start = async () => {
     }
 }
  start()
+
 
