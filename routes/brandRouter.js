@@ -3,7 +3,7 @@ const router = new Router
 const brandController = require('../controllers/brandController')
 
 router.post('/', brandController.create)
-router.get('/')
+router.get('/', brandController.getAll)
 
  
 
