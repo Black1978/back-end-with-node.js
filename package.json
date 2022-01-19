@@ -7,7 +7,7 @@
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrii Chornyi",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
